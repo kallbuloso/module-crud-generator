@@ -1,0 +1,43 @@
+{
+    "name": "kallbuloso/modulecrudgenerator",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amaral karl",
+            "email": "kallbuloso@kallbuloso.com.br",
+            "homepage": "https://www.kallbuloso.com.br"
+        }
+    ],
+    "homepage": "https://github.com/kallbuloso/modulecrudgenerator",
+    "keywords": ["Laravel", "ModuleCrudGenerator"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "kallbuloso\\ModuleCrudGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "kallbuloso\\ModuleCrudGenerator\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "kallbuloso\\ModuleCrudGenerator\\ModuleCrudGeneratorServiceProvider"
+            ],
+            "aliases": {
+                "ModuleCrudGenerator": "kallbuloso\\ModuleCrudGenerator\\Facades\\ModuleCrudGenerator"
+            }
+        }
+    }
+}
