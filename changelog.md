@@ -2,7 +2,7 @@
 
 All notable changes to `ModuleCrudGenerator` will be documented in this file.
 
-## Version 1.0
+## Version 1.0.0
 
 ### Added
-- Everything
+- CRUD Module Generator
